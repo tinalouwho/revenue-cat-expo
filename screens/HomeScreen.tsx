@@ -30,59 +30,67 @@ const HomeScreen = () => {
             onPress={() => navigation.navigate("Paywall")}
             className="flex flex-col z-50  items-end justify-center fixed p-4"
           >
-            <FontAwesome name="user-circle-o" size={30} color="#00AD92" />
+            <View style={{ width: 30, height: 30 }}>
+              <Image
+                source={require("../assets/ghost.png")}
+                style={{ flex: 1, width: undefined, height: undefined }}
+                resizeMode="contain"
+              />
+            </View>
           </TouchableOpacity>
         </View>
-        <View className="flex justify-center items-center">
-          <Image
-            source={require("../assets/rumecircle.png")}
-            className="w-32 h-32"
-          />
+        <View className="flex justify-center items-center py-6">
+          <Text className="text-[#2D2D2D] dark:text-[#E5E1D5] font-black text-6xl text-">
+            RUME
+          </Text>
+          <Text className=" font-bold text-red-600 text-lg">
+            Go to your RUME where it&apos;s safe.
+          </Text>
         </View>
         <View className="mx-5  flex-1 justify-center">
           <View className="flex-row justify-between">
             <ActionRow
-              title="Track Workout"
+              title="Unlock your RUME"
               screen="Demo"
-              color="#EA162D"
-              icon="fitness"
+              color="#222222"
+              icon="key"
               vertical
             />
             <ActionRow
-              title="Browse Workouts"
+              title="Browse unlocked RUMEs"
               screen="Demo"
-              color="#C58E00"
-              icon="library"
+              color="#222222"
+              icon="chatbubbles-sharp"
               vertical
             />
           </View>
           <ActionRow
-            title="Track Workout"
+            title="Share"
             screen="Demo"
-            color="#0A40D4"
+            color="#222222"
             icon="share-social"
             vertical
           />
           <ActionRow
-            title="Track Workout"
+            title="Share"
             screen="Demo"
-            color="#06046A"
-            icon="share-social"
-            vertical
-            requiresPro
-          />
-          <ActionRow
-            title="Track Workout"
-            screen="Demo"
-            color="#AB3232"
+            color="#222222"
             icon="share-social"
             vertical
             requiresPro
           />
           <ActionRow
-            title="Track Workout"
+            title="Share"
             screen="Demo"
-            color="#00AD92"
+            color="#222222"
+            icon="share-social"
+            vertical
+            requiresPro
+          />
+          <ActionRow
+            title="Share"
+            screen="Demo"
+            color="#222222"
             icon="share-social"
             vertical
             requiresPro

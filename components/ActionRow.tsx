@@ -32,13 +32,13 @@ const ActionRow = ({
   return (
     <TouchableOpacity
       onPress={() => navigation.navigate(screen)}
-      className={`flex flex-1 justify-center items-center py-6 rounded  m-2  ${
+      className={`flex flex-1 justify-center items-center py-2 rounded  m-1  ${
         vertical ? "flex-col" : "flex-row"
       }`}
       style={{ backgroundColor: color }}
     >
-      <Ionicons name={icon} size={30} color="white" />
-      <Text className="font-bold text-white">{title}</Text>
+      <Ionicons name={icon} size={25} color="#E2DFD4" />
+      <Text className="text-xs p-1 font-bold text-[#E2DFD4]">{title}</Text>
     </TouchableOpacity>
   );
 };
